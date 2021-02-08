@@ -2,7 +2,9 @@ import React from 'react';
 
 function App() {
     return (
-        <div>mqslkfj</div>
+        <div>
+            <p>placeholder for app</p>
+        </div>
     );
 }
 
