@@ -4,7 +4,9 @@ import { Navbar, NavbarBrand } from 'react-bootstrap';
 const Header = ({ title }) => {
     return (
         <Navbar className="text-white bg-primary sticky-top">
-            <h3>{title}</h3>
+            <div className="">
+                <h3>{title}</h3>
+            </div>
         </Navbar>
     )
 }

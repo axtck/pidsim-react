@@ -1,4 +1,5 @@
 import React from 'react';
+import SideBarNavElement from './SideBarNavElement';
 
 const SideBar = () => {
     const routes = [
@@ -11,10 +12,17 @@ const SideBar = () => {
             route: "/about",
         },
     ];
-    
+
+    const mappedRoutes = routes.map((r, i) => {
+        return <SideBarNavElement
+            key={i}
+            route={r}
+        />
+    });
+
     return (
         <div>
-            sidbar
+            {mappedRoutes}
         </div>
     )
 }
